@@ -1,4 +1,4 @@
-import 'package:airways_sh/language_page.dart';
+import 'package:airways_sh/Account_pages/language_page.dart';
 import 'package:flutter/material.dart';
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});

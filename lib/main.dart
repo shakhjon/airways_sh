@@ -1,14 +1,14 @@
-import 'package:airways_sh/account_page.dart';
-import 'package:airways_sh/delete_account_page.dart';
-import 'package:airways_sh/settings_page.dart';
-import 'package:airways_sh/transaction_page.dart';
+import 'package:airways_sh/Account_pages/account_page.dart';
+import 'package:airways_sh/Account_pages/delete_account_page.dart';
+import 'package:airways_sh/Account_pages/settings_page.dart';
+import 'package:airways_sh/Transactions//transaction_page.dart';
 import 'package:flutter/material.dart';
-import 'sign_in_screen.dart'; // Import your SignInScreen
-import 'sign_up_screen.dart'; // Import your SignUpScreen
-import 'payment_details_screen.dart'; // Import your PaymentDetailsScreen
-import 'passcode_screen.dart'; // Import your PasscodeScreen
-import 'payment_successful_screen.dart'; // Import your PaymentSuccessfulScreen
-import 'transaction_details_screen.dart'; // Import your TransactionDetailsScreen
+import 'Intro_pages/sign_in_screen.dart'; // Import your SignInScreen
+import 'Intro_pages/sign_up_screen.dart';
+import 'Payments/payment_details_screen.dart'; // Import your PaymentDetailsScreen
+import 'Payments/passcode_screen.dart'; // Import your PasscodeScreen
+import 'Payments/payment_successful_screen.dart'; // Import your PaymentSuccessfulScreen
+import 'Transactions/transaction_details_screen.dart'; // Import your TransactionDetailsScreen
 import 'home_page.dart'; // Import your HomePage
 
 void main() {

@@ -1,7 +1,7 @@
-import 'package:airways_sh/payment_details_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:airways_sh/Payments/payment_details_screen.dart';
 
-class SignInScreen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,14 +13,13 @@ class SignInScreen extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Sign In',
+              'Sign Up',
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
@@ -29,14 +28,6 @@ class SignInScreen extends StatelessWidget {
             const TextField(
               decoration: InputDecoration(
                 labelText: 'EMAIL',
-                hintText: 'Enter Your Email',
-              ),
-            ),
-            const SizedBox(height: 24),
-            const TextField(
-              obscureText: true,
-              decoration: InputDecoration(
-                labelText: 'PASSWORD',
               ),
             ),
             const SizedBox(height: 30),
@@ -54,14 +45,14 @@ class SignInScreen extends StatelessWidget {
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Sign in', style: TextStyle(color: Colors.white)),
+                  Text('Sign Up', style: TextStyle(color: Colors.white)),
                   SizedBox(width: 10),
                   Icon(Icons.check_circle, color: Colors.white),
                 ],
               ),
             ),
             const SizedBox(height: 20),
-            const Center(child: Text('Or Sign In With')),
+            const Center(child: Text('Or Sign Up With')),
             const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -85,13 +76,13 @@ class SignInScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text("Don’t Have an Account? "),
+                  const Text("Already have an account? "),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, '/signup');
+                      Navigator.pushNamed(context, '/signin');
                     },
                     child: const Text(
-                      'Sign Up',
+                      'Sign In',
                       style: TextStyle(color: Colors.blue),
                     ),
                   ),
